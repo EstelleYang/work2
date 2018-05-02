@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 场地列表内容区块布局 -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_White"
+     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/venueItemView1"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:text="建设的风景"
+            android:id="@+id/venue_name"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/bg_White"
+            android:background="@color/bg_Black"
+            android:alpha="0.4"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/bg_Gray"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/venue_Intr"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/xx"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/bg_Gray"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/venue_yuanjia"
+        android:textColor="@color/gray"
+        android:textSize="20dp"
+        android:paddingLeft="20px"
+        android:text="￥88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/bg_Gray"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/venue_xianjia"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:paddingLeft="20px"
+        android:text="￥88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 灰色分割线 验证码-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/bg_Gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:id="@+id/orderButton"
+            android:background="@drawable/bg_reservel"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <!-- 灰色分割线 验证码-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6.7dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/bg_Gray"/>
+
+</LinearLayout>

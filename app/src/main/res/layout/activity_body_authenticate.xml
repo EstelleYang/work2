@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lzjs.uappoint.act.BodyAuthenticateActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <include layout="@layout/toolbar_back"  android:id="@+id/id_toolbar"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:gravity="top"
+            android:id="@+id/editText"
+            android:layout_weight="0.33"
+            android:hint="请输入文字内容"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="@null"/>
+        <LinearLayout
+            android:id="@+id/rl_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_White"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llContainer"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/body_paperwork_zm"-->
+                <!--android:src="@drawable/paperwork_default"-->
+                <!--android:onClick="uploadImgClick"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+            <com.redare.imagepicker.widget.ImagePickerView
+                android:id="@+id/imagePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.redare.imagepicker.widget.ImagePickerView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/body_submit"
+            android:background="@color/app_pri_color"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/publish_topic"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_back"
+        android:id="@+id/id_toolbar"/>
+
+   <!-- <com.lzjs.uappoint.myview.MyNestedScrollParent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d4d1d1"
+            android:text="sdfasdfasdfasdf"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <com.lzjs.uappoint.myview.MyNestedScrollChild
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sfdfafdf"
+                android:textColor="#f0f"
+                android:textSize="14sp"/>-->
+            <WebView
+                android:id="@+id/article_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+
+       <!-- </com.lzjs.uappoint.myview.MyNestedScrollChild>
+    </com.lzjs.uappoint.myview.MyNestedScrollParent>-->
+</LinearLayout>

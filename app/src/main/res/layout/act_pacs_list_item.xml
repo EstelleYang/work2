@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tv_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.lzjs.uappoint.myview.CircleImageView
+                android:id="@+id/civ_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pro_head" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/space_6"
+                    android:layout_toRightOf="@+id/civ_head"
+                    android:text="用户姓名"
+                    android:textColor="@color/chocolate"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_fdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/civ_head"
+                    android:text="2017-01-22"
+                    android:textColor="@color/gray"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pacstype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:lines="1"
+                android:text="影像分类"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/pacsstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:drawableRight="@drawable/list_check_press" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/hosname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:text="就诊医院"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/recommentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/space_5"
+                android:drawableRight="@drawable/list_hand_press"
+                android:gravity="right|center_vertical"
+                android:lines="1"
+                android:text="推荐医生"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.lzjs.uappoint.myview.CollapsibleTextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/dimgray"
+                android:textSize="12sp" />
+
+            <com.lzjs.uappoint.myview.NoScrollGridView
+                android:id="@+id/gv_pacs"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:id="@+id/layout_bottombar"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0.0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        style="@style/bottom_bar_txt_style"
+                        android:drawableLeft="@drawable/list_wechat_press"
+                        android:text="互动消息"
+                        android:textColor="@color/darkgray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/tv_support"
+                        style="@style/bottom_bar_txt_style"
+                        android:drawableLeft="@drawable/list_report_press"
+                        android:text="诊断报告"
+                        android:textColor="@color/darkgray" />
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/top_category_bar_background"
+        android:layout_height="8dp"/>
+
+
+</LinearLayout>

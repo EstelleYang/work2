@@ -1,0 +1,229 @@
+<!-- 场地订单布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    android:orientation="vertical"
+    tools:context=".VenueOrderActivity">
+    <!-- 标题 -->
+    <include layout="@layout/home_top_title1"/>
+
+    <!-- 选择时间 -->
+    <TextView
+        android:text="@string/title_venue_select_time"
+        android:layout_width="wrap_content"
+        android:textColor="@color/bg_Black"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <!-- 灰色分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/bg_Gray"/>
+
+    <!-- 开始和结束日期 -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sDate"
+            android:hint="@string/title_start_date"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:drawableRight="@drawable/sj"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="至"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eDate"
+            android:hint="@string/title_end_date"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@drawable/sj"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <!-- 灰色分割线 -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/bg_Gray"/>
+
+    <!-- 开始和结束时间 -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sTime"
+            android:hint="@string/title_start_time"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:drawableRight="@drawable/sj"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="至"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTime"
+            android:hint="@string/title_end_time"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@drawable/sj"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <!-- 灰色分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/bg_Gray"/>
+
+    <!-- 输入提示 -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/title_venue_order_confirm"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical|left"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <!-- 灰色分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/bg_Gray"/>
+
+    <!-- 订单内容 -->
+    <TextView
+        android:text="@string/title_venue_order_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/bg_Black"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <!-- 灰色分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/bg_Gray"/>
+
+    <!-- 内容输入框 -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/orderContent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical|left"
+            android:textSize="12sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <!-- 灰色分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/bg_Gray"/>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/venueOrderConfirm">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/qr"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title_confirm"
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<!-- 注册 登录 信息编辑 详细页面top标题 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/title_top1"
+    android:background="@drawable/bg_titlebar">
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/title1_back"
+        android:src="@drawable/back1"
+        android:layout_width="0dp"
+        android:onClick="doBack"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:padding="6dp"
+        android:gravity="left"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:layout_weight="4"
+        android:text="用户"
+        android:id="@+id/center_title_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="right"/>
+</LinearLayout>

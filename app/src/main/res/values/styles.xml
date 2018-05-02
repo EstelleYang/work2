@@ -1,0 +1,186 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Design" parent="AppTheme"></style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!--<item name="android:colorBackground">#000000</item> 也可以设置背景色以及menu中的其他属性-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--设置不覆盖锚点-->
+    </style>
+
+    <!-- toolbar标题样式 -->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="SearchStyleEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/home_top_title_left_btn</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:hint">搜索</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />yy
+    <style name="learnnig_title_bar_style">
+        <item name="android:background">@drawable/bg_titlebar_main</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+    </style>
+
+    <style name="title_bar_style">
+        <item name="android:background">@drawable/bg_titlebar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+    </style>
+
+    <style name="back_view" parent="@style/title_bar_button">
+        <item name="android:gravity">right|center</item>
+       <!--- <item name="android:background">@drawable/transparent</item>-->
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:minHeight">44.0dip</item>
+        <item name="android:text">@null</item>
+        <item name="android:drawableLeft">@drawable/back1</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+
+    <style name="title_bar_button" parent="@style/common_button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@drawable/btn_common_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">17.0dip</item>
+        <item name="android:paddingRight">17.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="common_button" parent="@style/text_on_button">
+        <item name="android:background">@drawable/btn_common</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+
+    <style name="common_button_chocolate" parent="@style/text_on_button">
+        <item name="android:background">@drawable/btn_common_chocolate</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+
+    <style name="text_on_button">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+
+    <style name="title_text_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/title_text_color</item>
+    </style>
+
+    <style name="subscribe_my_tip_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/subscribe_tip_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/subscribe_seperate_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+
+    <style name="subscribe_flow_layout">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <style name="bottom_bar_txt_style">
+        <item name="android:textSize">@dimen/bottom_bar_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5.0dip</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="my_txt">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

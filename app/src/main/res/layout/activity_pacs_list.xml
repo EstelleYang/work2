@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pacs_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lzjs.uappoint.act.PacsListActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_pacs"  android:id="@+id/id_toolbar"/>
+    <ListView
+        android:id="@+id/lv_pacs"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fcfcfc"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none" />
+</LinearLayout>

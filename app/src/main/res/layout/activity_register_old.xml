@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/home_top_title1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray">
+
+        </View>
+
+        <RelativeLayout
+            android:background="@color/bg_White"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="手机号码："
+                android:id="@+id/textView" />
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/title_regi_phone"
+                android:maxLength="11"
+                android:textSize="14sp"
+                android:inputType="phone"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toLeftOf="@+id/verification_number_bt"
+                android:layout_toStartOf="@+id/verification_number_bt" />
+
+            <Button
+                android:id="@+id/verification_number_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/get_code"
+                android:background="@drawable/btn_gree_bg"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="26dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray">
+
+        </View>
+
+        <RelativeLayout
+            android:background="@color/bg_White"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="密       码："
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/et_password_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/enter_pwd_regular"
+                android:maxLength="11"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray">
+
+        </View>
+
+        <RelativeLayout
+            android:background="@color/bg_White"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="验  证  码："
+                android:id="@+id/textViews" />
+
+            <EditText
+                android:id="@+id/number_yzm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:textSize="14sp"
+                android:inputType="phone"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViews"
+                android:layout_toEndOf="@+id/textViews" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray">
+
+        </View>
+
+        <Button
+            android:id="@+id/registered_confirm"
+            android:background="@drawable/qr"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="注册"/>
+
+    </LinearLayout>
+
+</LinearLayout>

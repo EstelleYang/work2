@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.lzjs.uappoint.idcardscan.PreviewBorderView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/borderview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:tipTextColor="@color/colorAccent"
+        app:tipTextSize="16dp"
+        />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <Button
+            android:id="@+id/take"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:text="拍  照"/>
+
+        <Button
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="闪关灯"/>
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

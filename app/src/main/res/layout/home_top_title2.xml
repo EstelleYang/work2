@@ -1,0 +1,41 @@
+<!-- 场地 装备首页top标题 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:id="@+id/title_top2"
+android:background="@color/caogreen">
+
+<TextView
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:text="兰州"
+    android:textColor="@color/White"
+    android:textSize="18sp"
+    android:id="@+id/arear_text"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:drawableRight="@drawable/arear_dw_icon"
+    android:drawablePadding="2dp"
+    android:layout_gravity="left"/>
+
+<TextView
+    android:layout_weight="3"
+    android:text="@string/title_activity_equipment"
+    android:id="@+id/center_title_text"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:gravity="center"/>
+
+<ImageView
+    android:layout_weight="1"
+    android:src="@drawable/dw"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center"/>
+</LinearLayout>

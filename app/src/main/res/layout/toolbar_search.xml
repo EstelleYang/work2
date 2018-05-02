@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_titlebar"
+    android:minHeight="?attr/actionBarSize"
+    app:navigationIcon="@drawable/back1"
+    app:title=""
+    app:titleTextColor="#fff"
+    app:popupTheme="@style/ToolbarPopupTheme"
+    app:titleTextAppearance="@style/ToolbarTitle"
+    app:titleMarginStart="0dp">
+
+    <EditText
+        android:id="@+id/toolbar_name"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:drawableLeft="@drawable/ic_search_sel"
+        android:drawablePadding="5dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:focusable="true"
+        android:background="@drawable/search_bg"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="请输入关键字"/>
+
+    <!--<TextView
+        android:id="@+id/toolbar_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="12dp"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>-->
+    <Button
+        android:id="@+id/toolbar_btn"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="5dp"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_common"/>
+
+</android.support.v7.widget.Toolbar>

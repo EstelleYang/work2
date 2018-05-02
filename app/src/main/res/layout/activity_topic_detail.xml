@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lzjs.uappoint.act.TopicDetailActivity">
+    <include layout="@layout/toolbar_back"  android:id="@+id/id_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/tv_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.lzjs.uappoint.myview.CircleImageView
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/civ_head"
+                android:src="@drawable/pro_head"/>
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特兰普"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/civ_head"
+                android:textColor="@color/chocolate"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_fdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-01-22"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/civ_head"
+                android:layout_marginLeft="10dip"
+                android:layout_below="@+id/tv_user_name"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_view_count"
+                style="@style/bottom_bar_txt_style"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/list_eye_press"
+                android:text="0"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dip" >
+
+            <com.lzjs.uappoint.myview.CollapsibleTextView
+                android:id="@+id/collapsible_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="\u3000\u3000话题内容"
+                android:textColor="@color/dimgray"
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <com.lzjs.uappoint.myview.NoScrollGridView
+                android:id="@+id/gv_friends"
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/layout_bottombar"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        style="@style/bottom_bar_txt_style"
+                        android:drawableLeft="@drawable/list_comment_press"
+                        android:text="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/tv_support"
+                        style="@style/bottom_bar_txt_style"
+                        android:drawableLeft="@drawable/selector_video_assist"
+                        android:text="0" />
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@color/bg_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/topic_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="评论列表"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/topic_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/toppic_cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/topic_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:flipInterval="30" >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

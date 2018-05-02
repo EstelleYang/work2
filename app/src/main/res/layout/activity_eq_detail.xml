@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_top_title1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35px"
+                android:paddingRight="40px">
+
+
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="商品名称:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="内容介绍:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/eq_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center_vertical"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+                <com.lzjs.uappoint.myview.ListViewForScrollView
+                    android:id="@+id/mainart_list_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/eq_detail_productNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="商品价格：" />
+                    <TextView
+                        android:id="@+id/eq_detail_original_price"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:text="￥200" />
+                    <TextView
+                        android:id="@+id/eq_detail_ruling_Price"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red"
+                        android:layout_marginRight="20dp"
+                        android:text="￥150" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/eq_detail_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawableLeft="@drawable/tel"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/listgd"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/eq_detail_addre"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawableLeft="@drawable/point"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/listgd"
+                    android:gravity="center_vertical"
+                    android:text="甘肃省兰州市城关区" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_Gray" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/qr"
+                android:gravity="center"
+                android:onClick="BuyBtnClick"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="18dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

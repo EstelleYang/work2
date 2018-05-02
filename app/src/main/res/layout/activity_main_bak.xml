@@ -1,0 +1,339 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lzjs.uappoint.act.MainActivity">
+
+    <include layout="@layout/toolbar_main"  android:id="@+id/id_toolbar"/>
+
+    <!-- 标题栏 -->
+    <!--<include layout="@layout/home_top_title_main"/>-->
+    <appoint.lzjs.com.pulltorefreshview.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_bottom"
+        android:layout_below="@+id/id_toolbar"
+        android:orientation="vertical"
+        android:descendantFocusability="afterDescendants">
+
+        <ScrollView
+            android:id="@+id/home_sv"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_White"
+            android:fillViewport="true"
+            android:descendantFocusability="afterDescendants">
+
+            <LinearLayout
+                android:id="@+id/neicount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/fragment_cycle_viewpager_content"
+                    android:name="lzjs.com.picplayer.CycleViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/top_category_bar_background"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:background="@color/bg_White"
+                    android:orientation="horizontal"
+                    android:gravity="left|center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp">
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/top_category_bar_background"
+                        android:layout_height="4dp"/>
+                    <TextView
+                        android:text="影像专题"
+                        android:textSize="15sp"
+                        android:paddingLeft="15px"
+                        android:drawableLeft="@drawable/user_phone"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_ll_gallery_special"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/top_category_bar_background"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:background="@color/bg_White"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp">
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/top_category_bar_background"
+                        android:layout_height="4dp"/>
+                    <TextView
+                        android:text="@string/title_push_venue"
+                        android:textSize="15sp"
+                        android:paddingLeft="15px"
+                        android:drawableLeft="@drawable/user_auth"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_marginRight="15px"
+                        android:gravity="right">
+                        <TextView
+                            android:text=""
+                            android:textSize="18sp"
+                            android:textColor="@color/bg_Black"
+                            android:drawableRight="@drawable/icon_more_grav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/publishList_1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <com.lzjs.uappoint.myview.MyGridView
+                        android:id="@+id/gv_list_gnzj"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/top_category_bar_background"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:background="@color/bg_White"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp">
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/top_category_bar_background"
+                        android:layout_height="4dp"/>
+                    <TextView
+                        android:text="@string/title_push_venue_snzj"
+                        android:textSize="15sp"
+                        android:paddingLeft="15px"
+                        android:drawableLeft="@drawable/user_auth"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_marginRight="15px"
+                        android:gravity="right">
+                        <TextView
+                            android:text=""
+                            android:textSize="18sp"
+                            android:textColor="@color/bg_Black"
+                            android:drawableRight="@drawable/icon_more_grav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/publishList_2"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <com.lzjs.uappoint.myview.MyGridView
+                        android:id="@+id/gv_list_snzj"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/top_category_bar_background"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:background="@color/bg_White"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp">
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/top_category_bar_background"
+                        android:layout_height="4dp"/>
+                    <TextView
+                        android:text="@string/title_push_venue_topnews"
+                        android:textSize="15sp"
+                        android:paddingLeft="15px"
+                        android:drawableLeft="@drawable/user_dongtai"
+                        android:drawablePadding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_marginRight="15px"
+                        android:gravity="right">
+                        <TextView
+                            android:text=""
+                            android:textSize="18sp"
+                            android:textColor="@color/bg_Black"
+                            android:drawableRight="@drawable/icon_more_grav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/top_category_bar_background"
+                        android:layout_height="1px"/>
+                    <ListView
+                        android:id="@+id/lv_topnews"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#fcfcfc"
+                        android:cacheColorHint="#00000000"
+                        android:footerDividersEnabled="false"
+                        android:headerDividersEnabled="false"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </appoint.lzjs.com.pulltorefreshview.PullToRefreshView>
+
+    <LinearLayout
+        android:id="@+id/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/bg_Gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:background="@color/bg_White"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="navMenuBtnClick"
+                android:tag="nav_home"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/iv_menu_1"
+                    android:src="@drawable/home_index_selected"
+                    android:scaleType="centerInside"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="navMenuBtnClick"
+                android:tag="nav_find"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/iv_menu_0"
+                    android:scaleType="centerInside"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_topic_normal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学术"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="navMenuBtnClick"
+                android:tag="nav_pacs"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/iv_menu_yx"
+                    android:scaleType="centerInside"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_pacs_normal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="影像"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="navMenuBtnClick"
+                android:tag="nav_mine"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/iv_menu_2"
+                    android:scaleType="centerInside"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_myself_normal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

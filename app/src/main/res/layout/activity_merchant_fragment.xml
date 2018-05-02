@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lzjs.uappoint.act.MerchantFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/grzl"
+                android:gravity="center_horizontal|left"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="商家名称："
+                android:textColor="@color/bg_Black"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal|left"
+                />
+
+            <TextView
+                android:id="@+id/merchantName"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="8:30-20:30"
+                android:gravity="center_horizontal|left"
+                />
+
+        </LinearLayout>
+
+        <!-- 灰色分割线 身份认证 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rzzl"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="商家电话："
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:id="@+id/merchant_mobile"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0931-888888"
+                android:gravity="center_horizontal|left"/>
+
+        </LinearLayout>
+
+        <!-- 灰色分割线 修改密码 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xgmm"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="商家地址："
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:id="@+id/merchant_addre"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="甘肃省兰州市城关区大沙坪"
+                android:gravity="center_horizontal|left"/>
+
+        </LinearLayout>
+
+        <!-- 灰色分割线 评价 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pj"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="商家简介："
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:id="@+id/merchan_infomation"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="这是商家简介"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <!-- 灰色分割线 评价 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pj"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="商家特色："
+                android:textColor="@color/red"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:id="@+id/merchane_special"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="这是商家特色内容"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pj"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="活动公告："
+                android:textColor="@color/red"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:id="@+id/activity_content"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="这是活动内容"
+                android:gravity="center_horizontal|left"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pj"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="商家状态："
+                android:textColor="@color/red"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/merchant_state"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="这是商家状态"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pj"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="优        惠："
+                android:textColor="@color/red"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:id="@+id/favorable"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="这是优惠"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0.5dp"
+                android:background="@color/red"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家证书"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/red"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imageView_card1"
+            android:src="@mipmap/logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imageView_card2"
+            android:src="@mipmap/logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imageView_card3"
+            android:src="@mipmap/logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0.5dp"
+                android:background="@color/red"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家图片"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/red"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView_1"
+            android:src="@mipmap/logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView_2"
+            android:src="@mipmap/logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

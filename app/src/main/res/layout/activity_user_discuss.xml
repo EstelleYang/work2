@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_Gray"
+    tools:context="com.lzjs.uappoint.act.Eq_BuyActivity">
+    <include layout="@layout/home_top_title1"/>
+
+    <EditText
+        android:id="@+id/et_discuss_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:background="@color/white"
+        android:hint="@string/input_discuss"/>
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/discuss_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/qr"/>
+        <TextView
+            android:id="@+id/discuss_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="提交"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:gravity="center"/>
+    </FrameLayout>
+</LinearLayout>

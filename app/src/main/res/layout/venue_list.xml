@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 场地列表布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!-- 标题栏 -->
+    <include layout="@layout/home_top_title3"/>
+    <appoint.lzjs.com.pulltorefreshview.PullToRefreshView
+        android:id="@+id/venue_list_pull_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/venue_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_top3"
+        android:orientation="horizontal">
+        <com.lzjs.uappoint.myview.ExpandTabView
+            android:id="@+id/expandtab_view_are_ve"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/title_area_search" />
+        <com.lzjs.uappoint.myview.ExpandTabView
+            android:id="@+id/expandtab_view_sort_ve"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/title_default_search" />
+    </LinearLayout>
+
+    <GridView
+        android:layout_below="@+id/venue_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/venue_list_home_gridView"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp"
+        android:layout_gravity="center_horizontal" />
+
+    </appoint.lzjs.com.pulltorefreshview.PullToRefreshView>
+</RelativeLayout>

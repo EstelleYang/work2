@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <appoint.lzjs.com.pulltorefreshview.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- A -->
+
+        <ScrollView
+            android:id="@+id/src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000" >
+
+            <LinearLayout
+                android:id="@+id/neicount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+        <!-- B -->
+
+    </appoint.lzjs.com.pulltorefreshview.PullToRefreshView>
+
+    <!--
+    从   A  到  B   ，可以用scrollview、listview、gridview、针对listview与gridview，
+    只需要在自己外面加一层 PullToRefreshView均可使用，activity的代码可以不变，主
+    要是针对PullToRefreshView 的子view的操作得看自己情况来写。
+    -->
+
+</RelativeLayout>

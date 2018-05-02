@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".FindActivity">
+<!--头部-->
+<include layout="@layout/home_top_title1"/>
+
+    <LinearLayout
+        android:id="@+id/find_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_top1"
+        android:orientation="horizontal">
+        <com.lzjs.uappoint.myview.ExpandTabView
+            android:id="@+id/expandtab_view_sort_ve"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/title_default_search" />
+        <com.lzjs.uappoint.myview.ExpandTabView
+            android:id="@+id/expandtab_view_are_ve"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/title_area_search" />
+        <me.next.tagview.TagCloudView
+            android:id="@+id/tag_cloud_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_tagcloudview_light_selector"
+            app:tcvItemBorderHorizontal="8dp"
+            app:tcvItemBorderVertical="6dp"
+            app:tcvBorder="8dp"
+            app:tcvBackground="@drawable/background_tag_selector"
+            app:tcvTextColor="#42A5F5"
+            app:tcvSingleLine="true"
+            app:tcvCanTagClick="true"
+            />
+    </LinearLayout>
+
+<!--中间部分-->
+<LinearLayout
+    android:layout_below="@+id/find_layout_id"
+    android:layout_above="@+id/eq_menu_bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/find_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"/>
+</LinearLayout>
+
+
+<!--底部-->
+<LinearLayout
+    android:id="@+id/eq_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:paddingTop="8dp"
+
+    android:background="@color/bg_White"
+    android:paddingBottom="8dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/eq_menu_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_fx_highlight" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag="nav_index"
+        android:onClick="navMenuBtnClick"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/eq_menu_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_index_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:tag="nav_mine"
+        android:onClick="navMenuBtnClick"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/eq_menu_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_me_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lzjs.uappoint.act.VenueDetailActivity">
+
+    <include layout="@layout/home_top_title1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:paddingLeft="@dimen/mine_item_left"
+            android:src="@drawable/grzl" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="商家名称："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/merchantName_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|left"
+            android:text="8:30-20:30" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:paddingLeft="@dimen/mine_item_left"
+            android:src="@drawable/tel" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="商家电话："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/merchantPhone_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|left"
+            android:text="8:30-20:30" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:paddingLeft="@dimen/mine_item_left"
+            android:src="@drawable/business_gree" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="场地地址："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/address_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|left"
+            android:text="8:30-20:30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:paddingLeft="@dimen/mine_item_left"
+            android:src="@drawable/szz" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="开始日期："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/start_date_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|left"
+            android:text="8:30-20:30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:paddingLeft="@dimen/mine_item_left"
+            android:src="@drawable/szz" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="结束日期："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/end_date_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|left"
+            android:text="8:30-20:30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pic_venue"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/mine_item_left"
+            android:scaleType="fitXY"
+            android:src="@drawable/grzl" />
+
+        <TextView
+            android:id="@+id/name_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="场地名称："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/num_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="场地数量："
+            android:textColor="@color/bg_Black" />
+
+        <TextView
+            android:id="@+id/price_venue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:text="￥100" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/order_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="商家名称："
+            android:textColor="@color/red" />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray" />
+
+
+</LinearLayout>

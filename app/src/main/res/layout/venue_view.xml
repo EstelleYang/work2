@@ -1,0 +1,267 @@
+<!-- 场地详细布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    android:orientation="vertical"
+    tools:context=".VenueViewActivity">
+
+    <!-- 标题 -->
+    <include layout="@layout/home_top_title1" />
+
+    <ScrollView
+        android:id="@+id/venueViewScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35px"
+                android:paddingRight="40px">
+
+
+                <TextView
+                    android:id="@+id/venueName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="场地名称:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="场地介绍:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/venueIntr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <com.lzjs.uappoint.myview.ListViewForScrollView
+                    android:id="@+id/venue_view_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/venueNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_venue_num"
+                    android:textColor="@color/hight_green"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/venueType"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_venue_nature"
+                    android:textColor="@color/hight_green"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/venueOpenTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/sz"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_open_time"
+                    android:textColor="@color/venue_color_black"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="场地价格：" />
+
+                    <TextView
+                        android:id="@+id/venue_price_yuanjia"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="￥200" />
+
+                    <TextView
+                        android:id="@+id/venue_price_xianjia"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="￥150"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/venue_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawableLeft="@drawable/tel"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/listgd"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_Gray" />
+
+                <TextView
+                    android:id="@+id/venueAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawableLeft="@drawable/point"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/listgd"
+                    android:gravity="center_vertical"
+                    android:text="甘肃省兰州市城关区" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_Gray" />
+
+            <Button
+                android:id="@+id/venueReserve"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/qr"
+                android:gravity="center"
+                android:text="@string/title_reserve"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+    <!--<ScrollView--><!--android:id="@+id/venueViewScroll"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_marginTop="40dp">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/title_top1"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_marginTop="20dp"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/venueName"--><!--android:text="场地名称"--><!--android:textColor="@color/bg_Black"--><!--android:textSize="22sp"--><!--android:gravity="center"--><!--android:layout_gravity="center"/>-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/venueIntr"--><!--android:text="体工二大队篮球场地，采用先进的篮球场地材料设计铺设，环境好可洗澡。"--><!--android:textColor="@color/select_title_color"--><!--android:layout_marginTop="10dp"--><!--android:layout_marginLeft="10dp"--><!--android:layout_marginRight="10dp"--><!--android:layout_gravity="center"/>--><!--</LinearLayout>-->
+
+    <!--<View--><!--android:layout_width="wrap_content"--><!--android:layout_height="0.5dp"--><!--android:layout_marginTop="20dp"--><!--android:background="@color/bg_Gray"/>-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:drawableLeft="@drawable/sz"--><!--android:text="@string/title_open_time"--><!--android:textColor="@color/venue_color_black"--><!--android:textSize="12sp"--><!--android:id="@+id/venueOpenTime"--><!--android:layout_marginTop="10dp"--><!--android:layout_marginLeft="10dp"--><!--android:layout_alignParentLeft="true"--><!--android:drawablePadding="5dp"/>--><!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
+
+
+    <!--<TextView--><!--android:layout_weight="1"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:text="￥88"--><!--android:textColor="@color/price_color"--><!--android:textSize="18sp"--><!--android:textStyle="bold"--><!--android:id="@+id/venuePrice"--><!--android:layout_gravity="right"--><!--android:gravity="right"--><!--android:layout_marginTop="5dp"--><!--android:layout_marginRight="10dp"--><!--android:layout_alignParentRight="true"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_marginTop="5dp">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="@string/title_venue_nature"--><!--android:textColor="@color/hight_green"--><!--android:textSize="12sp"--><!--android:id="@+id/venueType"--><!--android:layout_marginLeft="10dp"--><!--android:layout_alignParentLeft="true"--><!--android:drawablePadding="5dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; 灰色分割线 &ndash;&gt;--><!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="0.5dp"--><!--android:layout_marginTop="10dp"--><!--android:layout_marginLeft="12dp"--><!--android:layout_marginRight="12dp"--><!--android:background="@color/bg_Gray"/>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:drawableLeft="@drawable/wz"--><!--android:text="甘肃省兰州市"--><!--android:textColor="@color/venue_color_black"--><!--android:textSize="12sp"--><!--android:textStyle="bold"--><!--android:id="@+id/venueAddress"--><!--android:layout_marginTop="10dp"--><!--android:layout_marginLeft="10dp"--><!--android:layout_alignParentLeft="true"--><!--android:drawablePadding="5dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; 灰色分割线 &ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; 灰色分割线 &ndash;&gt;--><!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="0.5dp"--><!--android:layout_marginTop="10dp"--><!--android:layout_marginLeft="12dp"--><!--android:layout_marginRight="12dp"--><!--android:background="@color/bg_Gray"/>-->
+
+    <!--<com.lzjs.uappoint.myview.ListViewForScrollView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:id="@+id/venue_view_pic"--><!--android:horizontalSpacing="4dp"--><!--android:verticalSpacing="4dp"--><!--android:layout_gravity="center_horizontal" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="45dp"--><!--android:layout_alignParentBottom="true"--><!--android:paddingTop="8dp"--><!--android:layout_marginBottom="5dp"--><!--android:alpha="0.8"--><!--android:orientation="horizontal" >-->
+
+    <!--<Button--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/qr"--><!--android:text="@string/title_reserve"--><!--android:textColor="@color/white"--><!--android:textSize="18dip"--><!--android:id="@+id/venueReserve"--><!--android:layout_marginLeft="25dp"--><!--android:layout_marginRight="25dp"--><!--android:gravity="center"--><!--android:layout_gravity="center"/>-->
+
+    <!--</LinearLayout>-->
+

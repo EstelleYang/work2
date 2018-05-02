@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lzjs.uappoint">
+
+    <!-- 屏幕适配配置 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <!-- 加入网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 发送短信的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 读写sdCard的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Camera features - recommended -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+
+    <application
+        android:name=".util.ExitApplication"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="PluginSample" />
+        <meta-data
+            android:name="MARKET"
+            android:value="hello" />
+
+        <activity
+            android:name=".act.MainActivity"
+            android:label="@string/app_name" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3a163d0602b0ba40c44029d0222f546f" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".act.EquipmentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".act.VenueActivity" />
+        <activity android:name=".act.SmsIdentifyingCodeActivity" />
+        <activity android:name=".act.VenueListActivity" />
+        <activity android:name=".act.VenueViewActivity" />
+        <activity android:name=".act.VenueOrderActivity" />
+        <activity android:name=".act.EquiListActivity" />
+        <activity android:name=".act.EqDetailActivity" />
+        <activity android:name=".act.OrderListActivity" />
+        <activity android:name=".act.Eq_BuyActivity" />
+        <activity android:name=".act.MineActivity" />
+        <activity android:name=".act.UserInfoActivity" />
+        <activity android:name=".act.UserPassWordActivity" />
+        <activity android:name=".act.BodyAuthenticateActivity" />
+        <activity android:name=".act.SelectCityActivity" />
+        <activity android:name=".act.UserAppraiseActivity" />
+        <activity android:name=".act.MerchantInfoActivity" />
+        <activity android:name=".act.ProductListActivity" />
+        <activity android:name=".act.MerchantAppraiseFragment" />
+        <activity android:name=".act.MerchantFragment" />
+        <activity android:name=".act.LoginActivity" />
+        <activity android:name=".act.RegisterActivity" />
+        <activity android:name=".act.UserAddresActivity" />
+        <activity android:name=".act.UserAddresListActivity" />
+        <activity android:name=".act.OrderPayActivity" />
+        <activity android:name=".act.FindActivity" />
+        <activity android:name=".act.PublishInfoDetailActivity" />
+        <activity android:name=".act.ChannelActivity" />
+        <activity
+            android:name=".act.EquipmentDetailsActivity"
+            android:label="@string/title_activity_equipment_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".act.UserDiscussActivity"
+            android:label="@string/title_activity_user_discuss"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".act.FindPassWordActivity"
+            android:label="@string/title_activity_find_pass_word"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".act.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".act.SearchViewActivity" />
+        <activity
+            android:name=".act.MoreProductActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".act.VenueDetailActivity" />
+        <activity android:name=".act.MerchantMapActivity" />
+        <activity android:name=".act.LearningActivity" />
+        <activity android:name=".act.ArticleDetailActivity"></activity>
+        <activity android:name=".act.FriendsListActivity"></activity>
+        <activity android:name=".act.MeetingListActivity"></activity>
+        <activity android:name=".act.MeetingDetailActivity"></activity>
+        <activity android:name=".act.PacsListActivity"></activity>
+        <activity android:name=".act.ExpertActivity"></activity>
+        <activity android:name=".act.ExpertsDetailActivity" />
+        <activity android:name=".act.ImagePagerActivity" />
+        <activity android:name=".act.TopicDetailActivity" />
+        <activity android:name=".act.ReplyListActivity" />
+
+        <activity android:name=".act.AcceptAmountActivity"></activity>
+        <activity android:name=".act.CollectedArticleDetailActivity"></activity>
+        <activity android:name=".act.CollectionArticleListActivity"></activity>
+
+        <activity
+            android:name="com.redare.imagepicker.activity.ImagesGridActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.redare.imagepicker.activity.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.redare.imagepicker.activity.PreviewDelActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fresco.FrescoMainActivity"
+            android:theme="@style/AppTheme.Design" />
+        <activity android:name=".fresco.ui.ViewPagerActivity" />
+        <activity android:name=".fresco.ui.SubsamplingScaleActivity" />
+        <activity android:name=".fresco.ui.GifActivity" />
+        <activity android:name=".fresco.ui.CustomGifViewActivity" />
+        <activity android:name=".idcardscan.IdCardMainActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".magicimage.MagicMainActivity" android:theme="@style/AppTheme"/>
+        <!--Image Selector Entry-->
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" />
+    </application>
+
+</manifest>

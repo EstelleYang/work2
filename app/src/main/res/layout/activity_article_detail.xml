@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drakeet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_article_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back"  android:id="@+id/id_toolbar"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.20000005dip"
+        android:background="@color/help_button_view" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="10.0">
+
+        <WebView
+            android:id="@+id/wv_news_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <include layout="@layout/ll_bottom_bar" />
+</LinearLayout>

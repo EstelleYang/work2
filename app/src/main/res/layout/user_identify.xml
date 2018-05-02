@@ -1,0 +1,108 @@
+<!-- 用户身份认证布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milkYellow"
+    android:orientation="vertical"
+    tools:context=".UserIdentifyActivity">
+    <!-- 标题 -->
+    <include layout="@layout/home_top_title1"/>
+
+    <TextView
+        android:text="@string/title_activity_identify1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/select_title_color"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/identify1"
+            android:onClick="getUpload1BtnClick"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title_activity_upload_pic"
+            android:textColor="@color/select_title_color"
+            android:textSize="12dip"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/title_activity_identify2"
+        android:layout_width="wrap_content"
+        android:textColor="@color/select_title_color"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/identify2"
+            android:onClick="getUpload2BtnClick"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title_activity_upload_pic"
+            android:textColor="@color/select_title_color"
+            android:textSize="12dip"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="getIdentifyUploadBtnClick"
+            android:src="@drawable/qr"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title_confirm"
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:gravity="center"/>
+    </FrameLayout>
+</LinearLayout>

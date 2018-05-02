@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_sign"
+        android:title="每日签到"
+        android:icon="@drawable/user_rss"
+        app:showAsAction="never"
+        android:showAsAction="never"/>
+
+    <!--<item
+        android:id="@+id/action_message"
+        android:title="我的消息"
+        android:icon="@drawable/user_xiaoxi"
+        app:showAsAction="ifRoom"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_fav"
+        android:title="我的收藏"
+        android:icon="@drawable/user_shoucang"
+        app:showAsAction="never"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_pacs"
+        android:title="我的影像"
+        android:icon="@drawable/user_sina"
+        app:showAsAction="never"
+        android:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_share"
+        android:title="分享"
+        android:icon="@drawable/user_inquirypost"
+        app:showAsAction="never"/>-->
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="更多功能"
+        android:orderInCategory="100"
+        android:icon="@drawable/user_setup"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_about"
+                android:title="关于"
+                android:icon="@drawable/user_inquirypost"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    <!--<item
+        android:id="@+id/action_about"
+        android:title="关于"
+        android:icon="@drawable/user_inquirypost"
+        app:showAsAction="never"/>-->
+
+</menu>
+

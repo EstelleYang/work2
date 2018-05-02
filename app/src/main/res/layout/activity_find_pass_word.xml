@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:alpha="0.8">
+
+    <include layout="@layout/home_top_title1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/bg_Gray_light"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/xgsjh"
+            android:id="@+id/phone_number" />
+
+        <EditText
+            android:id="@+id/input_phone_number_find"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="请输入手机号码"
+            android:maxLength="11"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/phone_number"
+            android:inputType="phone"
+            android:layout_toLeftOf="@+id/verification_number_button" />
+
+        <Button
+            android:id="@+id/verification_number_button_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:background="@drawable/btn_gree_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="26dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/bg_Gray_light"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/xgsjh"
+            android:id="@+id/verification_number" />
+
+        <EditText
+            android:id="@+id/input_verification_number_find"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="输入验证码"
+            android:maxLength="6"
+            android:inputType="number"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/verification_number"
+            android:layout_toEndOf="@+id/verification_number" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/bg_Gray_light"
+        >
+    </View>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/bg_Gray_light"
+        >
+    </View>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:text="设置新密码："/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/bg_Gray_light"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/set_password_find"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:hint="@string/enter_pwd_regular"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/bg_Gray_light"
+        >
+    </View>
+
+    <Button
+        android:id="@+id/user_info_change_password_confirm_find"
+        android:background="@drawable/qr"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="确认"/>
+
+
+</LinearLayout>

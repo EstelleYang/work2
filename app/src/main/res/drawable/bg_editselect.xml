@@ -1,0 +1,5 @@
+<!-- 下拉选择样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:drawable="@drawable/bg_editselect_normal" />
+    <item android:state_focused="true" android:drawable="@drawable/bg_editselect_focused" />
+</selector>  

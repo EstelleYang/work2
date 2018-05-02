@@ -1,0 +1,266 @@
+<!-- 菜单我的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    android:orientation="vertical"
+    tools:context=".act.MineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#ff2878D0"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.lzjs.uappoint.myview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/myPic"
+            android:src="@drawable/user_head_male"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myName"
+            android:textSize="10sp"
+            android:textColor="@color/bg_White"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mySex"
+            android:textSize="10sp"
+            android:textColor="@color/bg_White"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/xb"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="setMyInfBtnClick">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/integral_ic_follow"
+                android:gravity="center_horizontal|left"
+                />
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_my_info"
+                android:textColor="@color/bg_Black"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal|left"
+                />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xx"
+                android:gravity="center_horizontal|right"
+                />
+
+        </LinearLayout>
+
+        <!-- 灰色分割线 身份认证 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:onClick="setMyAssessBtnClick">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/integral_ic_lottery"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="我的检查报告"
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xx"
+                android:gravity="center_horizontal|right"/>
+
+        </LinearLayout>
+        <!-- 灰色分割线 修改密码 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="setMyUdpPwdBtnClick">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/integral_ic_publish"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_my_update_pwd"
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xx"
+                android:gravity="center_horizontal|right"/>
+
+        </LinearLayout>
+
+        <!-- 灰色分割线 评价 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="setMyEvaluateBtnClick">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/integral_ic_sysreward"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_my_fav"
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xx"
+                android:gravity="center_horizontal|right"/>
+
+        </LinearLayout>
+
+        <!-- 灰色分割线 回复 -->
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="setMyReplyBtnClick">
+
+            <ImageView
+                android:paddingLeft="@dimen/mine_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hf"
+                android:gravity="center_horizontal|left"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_my_reply"
+                android:textColor="@color/bg_Black"
+                android:gravity="center_horizontal|left"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xx"
+                android:gravity="center_horizontal|right"/>
+
+        </LinearLayout>-->
+
+        <!-- 灰色分割线 退出登录 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_Gray"/>
+
+        <Button
+            android:id="@+id/body_submit"
+            android:background="@drawable/bg_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="注销登录"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/arcimgView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/art_imglist_1" />
+
+        <TextView
+            android:id="@+id/arctital"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:alpha="0.7"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@color/bg_Black"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="建设的风景"
+            android:textColor="@color/bg_White" />
+
+    </RelativeLayout>
+</LinearLayout>

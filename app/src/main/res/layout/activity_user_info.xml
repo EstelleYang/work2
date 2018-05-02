@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lzjs.uappoint.act.UserInfoActivity">
+
+    <include layout="@layout/home_top_title1"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/bg_Gray"/>
+    <LinearLayout
+        android:id="@+id/title_point2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/user_name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/user_name"
+            android:hint="@string/editor_user_name"
+            android:textSize="12sp"
+            android:background="@null"
+            android:textColor="@color/tv_Black"
+            android:singleLine="true"
+            android:gravity="center_vertical"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/user_sex"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radioGroup"
+            android:contentDescription="性别"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:id="@+id/sex_m" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/sex_w"/>
+
+        </RadioGroup>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/user_age"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp"/>
+
+        <Spinner android:id="@+id/user_age"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"></Spinner>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_White"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/user_job"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/user_job"
+            android:inputType="text"
+            android:hint="@string/editor_user_job"
+            android:textSize="12sp"
+            android:textColor="@color/tv_Black"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:background="@null"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!-- 灰色分割线 确认-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/image_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="getUserRegiBtnClick"
+            android:src="@drawable/qr"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_save"
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:gravity="center"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lzjs.uappoint.act.PacsAdviceFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/pacs_advice_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="编辑诊断报告"
+            android:drawableLeft="@drawable/integral_ic_reply"
+            android:drawablePadding="6dp"/>
+        <Button
+            android:id="@+id/pacs_advice_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="下发诊断报告"
+            android:drawableRight="@drawable/integral_ic_signin"
+            android:drawablePadding="6dp"/>
+    </LinearLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/layout_button">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/view_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请按编辑按钮进行操作"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="请键入报告内容"
+                android:textSize="16sp"
+                android:gravity="top"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

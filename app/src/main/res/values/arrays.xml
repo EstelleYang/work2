@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>2017年2月10日兰大二院骨科诊断资料</item>
+        <item>2017年1月10日兰大一院骨科诊断资料 </item>
+    </string-array>
+    <string-array name="doctor">
+        <item>王晓霞</item>
+        <item>李沐 </item>
+    </string-array>
+    <string-array name="timeChoose">
+        <item>当天</item>
+        <item>最近一周</item>
+        <item>最近一月</item>
+        <item>最近半年</item>
+    </string-array>
+</resources>

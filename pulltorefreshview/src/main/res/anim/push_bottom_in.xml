@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上下滑入式 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="500"
+        android:fromYDelta="-100%p"
+        android:toYDelta="0" />
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+<!--      <scale
+        android:duration="500"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/overshoot_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatMode="reverse"
+        android:startOffset="0"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />   -->
+     
+<!-- android:interpolator: 加速器，非常有用的属性，可以简单理解为动画的速度，可以是越来越快，也可以是越来越慢，或者是先快后忙，或者是均匀的速度等等，对于值如下：
+
+@android:anim/accelerate_interpolator： 越来越快
+
+@android:anim/decelerate_interpolator：越来越慢
+
+@android:anim/accelerate_decelerate_interpolator：先快后慢
+
+@android:anim/anticipate_interpolator: 先后退一小步然后向前加速
+
+@android:anim/overshoot_interpolator：快速到达终点超出一小步然后回到终点
+
+@android:anim/anticipate_overshoot_interpolator：到达终点超出一小步然后回到终点
+
+@android:anim/bounce_interpolator：到达终点产生弹球效果，弹几下回到终点
+
+@android:anim/linear_interpolator：均匀速度。 -->
+   
+
+</set>

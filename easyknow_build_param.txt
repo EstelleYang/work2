@@ -1,0 +1,16 @@
+易知道项目打包参数：
+
+    密码：lzjs_easyknow
+    Alias : lzjs_easyknow
+    password : lzjs_easyknow
+    first and last name : lzjs
+    organizational Unit : lzjs
+    organization : lzjs
+    city or Locality : lanzhou
+
+当前包下的easyknow_app.jks是证书文件
+
+
+手动打包命令 进入项目根目录执行以下命令
+
+./gradlew -Pmarket=markets.txt clean archiveApkRelease
